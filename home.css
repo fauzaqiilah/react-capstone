@@ -1,0 +1,30 @@
+ h1 {
+    font-size: 60px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+ }   
+    
+ body {
+    font-family: 'SFCompactDisplay-Regular', sans-serif;
+    font-size: 14px;
+    color: #19345E;
+ }
+
+ p {
+    font-size: 20px;
+ }
+ 
+
+ button1 {
+    background-color: #F47522;
+    border-color: #F47522;
+ }
+
+ hato {
+    margin-left: -10px;
+ }
+
+ h3 {
+    font-size: 30px;
+ }
