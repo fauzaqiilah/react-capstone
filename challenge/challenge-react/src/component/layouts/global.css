@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&display=swap');
+
+/* WELCOMING QUOTES */
 .container{
     margin: 50px;
-    text-align: center;
+    text-align:center;
     
+}
+
+.tulisan{
+    margin: 90px;
+    text-align: left;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #002B5B;
+    line-height: 43px;
+}
+
+.penulis{
+    font-size: small;
+}
+
+.garis{
+    width: 120vh;
+}
+
+
+/* ARTIKEL TITLE */
+
+.artikel p{
+    margin-top: 40px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color:#002B5B;
+    line-height: 30px;
+}
+
+.subtulisan{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: gray;
+
+}
+
+/* grid konten */
+
+.grid-konten{
+    margin: 20px 70px 20px 70px;
+    text-align: center;
+    border-color: black;
+
+}
+
+    /* card-1 */
+.designer{
+    width: 350px;
+    height: 350px;
+}
+
+.foto-designer{
+    margin: 0px;
+}
+
+.rekomendasi{
+    margin-top: 15vh;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #002B5B;
+    line-height: 20px;
+}
+
+#grammar{
+    margin-top: 15vh;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: #002B5B;
 }
