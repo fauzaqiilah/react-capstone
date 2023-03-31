@@ -29,15 +29,7 @@ const Kamis = () => {
           padding: '0 50px',
         }}
       >
-        <Breadcrumb
-          style={{
-            margin: '16px 0',
-          }}
-        >
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
+
         <div
           className="site-layout-content"
           style={{
@@ -52,7 +44,7 @@ const Kamis = () => {
           textAlign: 'center',
         }}
       >
-        Ant Design ©2023 Created by Ant UED
+        Ant Design ersdrftgh
       </Footer>
     </Layout>
         </>

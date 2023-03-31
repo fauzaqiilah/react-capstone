@@ -4,6 +4,7 @@ import { MENU_ITEM } from "../../../pages/formexample/constants";
 import Link from "../../../router/Link";
 
 
+
 const HeaderComponent = () => {
   const { Header } = Layout;
   const [current, setCurrent] = useState("1");
@@ -11,6 +12,7 @@ const HeaderComponent = () => {
     console.log("click ", e);
     setCurrent(e.key);
   };
+ 
   return (
     <Header
       style={{
@@ -31,7 +33,8 @@ const HeaderComponent = () => {
               margin: "16px 24px 16px 0",
               background: "rgba(255, 255, 255, 0.2)",
             }}
-          />
+            >
+          </div>
         </Link>
         <Menu
           onClick={onClick}

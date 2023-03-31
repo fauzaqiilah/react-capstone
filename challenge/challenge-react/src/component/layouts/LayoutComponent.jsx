@@ -1,8 +1,7 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { MENU_ITEM } from '../../pages/formExample/constants';
-import FooterComponenet from './footer/footerComponent';
 import HeaderComponent from './header/HeaderComponent';
+import FooterComp from './footer/FooterComp';
 
 
 const LayoutComponent = ({children}) => {
@@ -29,7 +28,7 @@ const LayoutComponent = ({children}) => {
         </div>
       </Content>
 
-     <FooterComponenet />
+     <FooterComp />
     </Layout>
         </>
     );

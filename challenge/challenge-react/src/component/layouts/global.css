@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&family=Lilita+One&family=Varela+Round&display=swap');
 
 /* WELCOMING QUOTES */
 .container{
@@ -49,11 +50,17 @@
 .grid-konten{
     margin: 20px 70px 20px 70px;
     text-align: center;
+    justify-content: space-between;
     border-color: black;
-
 }
 
     /* card-1 */
+.card{
+    border-color: #D8D8D8;
+    padding: 2px 2px;
+    width: 75vh;
+}
+
 .designer{
     width: 350px;
     height: 350px;
@@ -73,7 +80,160 @@
 
 #grammar{
     margin-top: 15vh;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Dancing Script', cursive;
     color: #002B5B;
 }
+
+.penulis2{
+    color: coral;
+    font-size: 16px;
+    text-align: left;
+}
+
+.garis2{
+    width: 70vh;
+}
+
+.konten-judul{
+    text-align: left;
+}
+
+.konten-judul h4{
+    color: #002B5B;
+    font-size: medium;
+}
+
+.konten-judulp{
+    color: darkgray;
+    font-size: medium;
+}
+
+/* card-2 */
+
+.presentasi{
+    width: 330px;
+    height: 350px;
+    text-align: left;
+    margin: 0px;
+}
+
+.growing{
+    text-align: right;
+    font-size: 35px;
+    padding-right: 50px;
+    margin-top: 20px;
+    color: #537FE7;
+    font-family: 'Lilita One', cursive;
+    word-spacing: 10px;
+}
+
+/* card-3 */
+.report{
+    width: 300px;
+    height: 340px;
+    text-align: center;
+}
+
+/* card-5 */
+.card5{
+    border-color: #D8D8D8;
+    margin-top: 25px;
+    padding: 2px 2px;
+    width: 75vh;
+}
+
+/* card-6 */
+.startup{
+    width: 300px;
+    height: 340px;
+    text-align: center;
+}
+
+.card6{
+    border-color: #D8D8D8;
+    margin-top: 25px;
+    padding: 2px 2px;
+    width: 75vh;
+}
+
+
+/* FOOTER */
+.footer{
+    text-align: center;
+    background-color: #002B5B;
+}
+
+.copyright{
+    margin: 15px 0px 20px 20px;
+}
+
+.cr{
+    color: white;
+    font-size: 10px;
+}
+
+#kebijakan{
+    text-align: left;
+    margin-left: 215px;
+    color: white;
+}
+
+.kebpriv{
+    margin-right: 20px;
+}
+
+.homealter{
+    color: white;
+    font-size: 20px;
+    margin: 18px 0px 15px;
+}
+
+#karfaq{
+    text-align: left;
+    margin-left: 27vh;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.career{
+    font-size: 15px;
+}
+
+.faq{
+    font-size: 15px;
+    
+}
+
+.kontak{
+    color: white;
+    font-size: 20px;
+    margin: 18px 0px 15px;
+}
+
+#sosmed{
+    text-align: left;
+    margin-left: 24vh;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.fb{
+    color: white;
+    font-size: 15px;
+}
+
+.twt{
+    color: white;
+    font-size: 15px;
+}
+
+.ig{
+    color: white;
+    font-size: 15px;
+}
+
+.site-layout-content {
+    min-height: 280px;
+    padding: 24px;
+  }
