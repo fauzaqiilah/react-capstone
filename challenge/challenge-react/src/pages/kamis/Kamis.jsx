@@ -1,54 +1,116 @@
-import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import React from "react";
+import { Image, Col, Row, Card } from "antd";
+import { ArrowRightOutlined } from "@ant-design/icons";
+import { ARTIKEL_DATA } from "./constant";
+import Gap from "../../component/gap/Gap";
 
-const { Header, Content, Footer } = Layout;
-const Kamis = () => {
-    const {
-        token: { colorBgContainer },
-      } = theme.useToken();
-    return (
-        <>
-             <Layout className="layout">
-      <Header>
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
-      </Header>
-      <Content
-        style={{
-          padding: '0 50px',
-        }}
-      >
+const QuotesComponent = () => {
+  return (
+    <>
+      {/* WELCOMING QUOTES */}
+      <Row>
+        <Col span={12}>
+          <div className="container">
+            <Image
+              className="image"
+              preview={{
+                visible: false,
+              }}
+              width={400}
+              height={500}
+              justify-content="center"
+              src="https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"
+              onClick={() => setVisible(true)}
+            />
+            <div
+              style={{
+                display: "none",
+              }}
+            ></div>
+          </div>
+        </Col>
 
-        <div
-          className="site-layout-content"
-          style={{
-            background: colorBgContainer,
-          }}
-        >
-          Content
-        </div>
-      </Content>
-      <Footer
-        style={{
-          textAlign: 'center',
-        }}
-      >
-        Ant Design ersdrftgh
-      </Footer>
-    </Layout>
-        </>
-    );
-}
+        <Col span={12}>
+          <div className="tulisan">
+            <p>
+              <b>
+                "Orang boleh pandai setinggi
+                <br /> langit, tapi selama ia tidak
+                <br /> menulis, ia akan hilang di
+                <br /> dalam masyarakat dan dari
+                <br /> sejarah. Menulis adalah
+                <br /> bekerja untuk keabadian."
+              </b>{" "}
+              <br />
+              <span className="penulis">Pramoedya Ananta Toer</span>
+            </p>
+          </div>
+        </Col>
+      </Row>
+      <hr className="garis" color="#F6F1F1" />
 
-export default Kamis;
+      {/* ARTIKEL TITLE */}
+      <div className="artikel">
+        <p>
+          Artikel Terkini
+          <br />
+          <span className="subtulisan">
+            Berikut ini adalah kumpulan tulisan terbaru yang dibuat oleh
+            Alterrans. Selamat membaca!
+          </span>
+        </p>
+      </div>
+
+      {ARTIKEL_DATA.map((artikel) => (
+          <Row key={artikel.id} className="row">
+            <Card className="card">
+              <Col>
+              <img src={artikel.image} alt="" id="img" />
+              <Gap height={10}/>
+              <div className="penulis2">{artikel.name}</div>
+              <hr className="batas"/>
+              <Gap height={10}/>
+              <div className="judul">{artikel.hobby}</div>
+              <Gap height={10}/>
+              <div className="berita">{artikel.age}</div>
+              <Gap height={10}/>
+                  <a
+                    href="https://alterrabills.id/"
+                    className="read-more"
+                    target="_blank"
+                  >
+                    <b>Read More</b>
+                    <ArrowRightOutlined />
+                  </a>
+                
+            </Col>
+            </Card>
+            <Gap width={30}/>
+            <Card className="card">
+              <Col>
+              <img src={artikel.image} alt="" id="img" />
+              <Gap height={10}/>
+              <div className="penulis2">{artikel.name}</div>
+              <hr className="batas"/>
+              <Gap height={10}/>
+              <div className="judul">{artikel.hobby}</div>
+              <Gap height={10}/>
+              <div className="berita">{artikel.age}</div>
+              <Gap height={10}/>
+              <a
+                    href="https://alterrabills.id/"
+                    className="read-more"
+                    target="_blank"
+                  >
+                    <b>Read More</b>
+                    <ArrowRightOutlined />
+                  </a>
+            </Col>
+            </Card>
+            </Row>
+      ))}
+    </>
+  );
+};
+
+export default QuotesComponent;

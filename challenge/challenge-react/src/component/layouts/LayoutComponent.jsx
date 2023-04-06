@@ -12,9 +12,9 @@ const LayoutComponent = ({children}) => {
       <HeaderComponent />
       <Content
         className="site-layout"
-        style={{
-          padding: '0 50px',
-        }}
+        // style={{
+        //   padding: '0 50px',
+        // }}
       >
         
         <div

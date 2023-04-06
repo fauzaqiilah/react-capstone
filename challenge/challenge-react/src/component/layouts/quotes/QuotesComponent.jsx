@@ -1,13 +1,8 @@
 import React from "react";
 import { Image, Col, Row, Card } from "antd";
-import designer from "../image/designer.png";
-import presentasi from "../image/presentasi.svg";
-import aset2 from "../image/aset2.png";
-import reading from "../image/reading.svg";
-import startup from "../image/startup.svg";
-import {
-  ArrowRightOutlined
-} from '@ant-design/icons';
+import { ArrowRightOutlined } from "@ant-design/icons";
+import { ARTIKEL_DATA } from "./constant";
+import Gap from "../../gap/Gap";
 
 const QuotesComponent = () => {
   return (
@@ -66,194 +61,54 @@ const QuotesComponent = () => {
         </p>
       </div>
 
-      {/* CARD KONTEN */}
-      <div className="grid-konten">
-        <Row gutter={12}>
-
-          {/* CARD-1 */}
-          <Col span={12}>
+      {ARTIKEL_DATA.map((artikel) => (
+          <Row key={artikel.id} className="row">
             <Card className="card">
-              <Row>
-
-              {/* ASET */}
-                <Col span={12} className="foto-designer">
-                  <img src={designer} alt="" className="designer" />
-                </Col>
-
-              {/* TULISAN */}
-                <Col span={12} className="rekomendasi">
-                  <b>3 Rekomendasi</b>
-                  <br />
-                  <span id="grammar"> Grammar Checker</span>
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Ragil Mega Ananda</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>3 Rekomendasi Grammar Checker</h4>
-                <p>Terkadang menulis email atau laporan dalam bahasa Inggris mempunyai tantangan tersendiri. Sebagian dari kita belum tentu menguasai bahasa Inggris tingkat tinggi, dan mengandalkan</p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
+              <Col>
+              <img src={artikel.image} alt="" id="img" />
+              <Gap height={10}/>
+              <div className="penulis2">{artikel.name}</div>
+              <hr className="batas"/>
+              <Gap height={10}/>
+              <div className="judul">{artikel.hobby}</div>
+              <Gap height={10}/>
+              <div className="berita">{artikel.age}</div>
+              <Gap height={10}/>
+                  <a
+                    href="https://alterrabills.id/"
+                    className="read-more"
+                    target="_blank"
+                  >
+                    <b>Read More</b>
+                    <ArrowRightOutlined />
+                  </a>
+                
+            </Col>
             </Card>
-          </Col>
-
-
-          {/* CARD-2 */}
-          <Col span={12}>
-          <Card className="card">
-              <Row>
-
-              {/* TULISAN */}
-                <Col span={12} className="growing">
-                  <h3><b>Growing<br/>Experiences<br/> at alterra</b></h3>
-                  <br />
-                </Col>
-
-              {/* ASET */}
-                <Col span={12} className="presentasi">
-                  <img src={presentasi} alt="" className="presentasi" />
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Juneta Putri</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>Growing Experience with Alterra : Internship Story</h4>
-                <p>Hello! Kenalin aku Juneta, mahasiswi yang memiliki kesempatan untuk internship di Alterra sebagai Culture & Engagement Intern atau biasa disebut Culment. Nah kali ini, aku mau sharing </p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
-            </Card>
-          </Col>
-        </Row>
-
-        <br/>
-        <Row gutter={12}>
-
-
-          {/* CARD-3 */}
-          <Col span={12}>
+            <Gap width={30}/>
             <Card className="card">
-
-              {/* ASET */}
-              <Row>
-                <Col span={24} >
-                  <img src={aset2} alt="" className="report" />
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Ragil Mega Ananda</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>3 Rekomendasi Grammar Checker</h4>
-                <p>Terkadang menulis email atau laporan dalam bahasa Inggris mempunyai tantangan tersendiri. Sebagian dari kita belum tentu menguasai bahasa Inggris tingkat tinggi, dan mengandalkan</p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
+              <Col>
+              <img src={artikel.image} alt="" id="img" />
+              <Gap height={10}/>
+              <div className="penulis2">{artikel.name}</div>
+              <hr className="batas"/>
+              <Gap height={10}/>
+              <div className="judul">{artikel.hobby}</div>
+              <Gap height={10}/>
+              <div className="berita">{artikel.age}</div>
+              <Gap height={10}/>
+              <a
+                    href="https://alterrabills.id/"
+                    className="read-more"
+                    target="_blank"
+                  >
+                    <b>Read More</b>
+                    <ArrowRightOutlined />
+                  </a>
+            </Col>
             </Card>
-          </Col>
-
-
-          {/* CARD-4 */}
-          <Col span={12}>
-          <Card className="card">
-              <Row>
-
-              {/* TULISAN */}
-                <Col span={12} className="growing">
-                  <h3><b>Growing<br/>Experiences<br/> at alterra</b></h3>
-                  <br />
-                </Col>
-
-              {/* ASET */}
-                <Col span={12} className="presentasi">
-                  <img src={presentasi} alt="" className="presentasi" />
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Juneta Putri</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>Growing Experience with Alterra : Internship Story</h4>
-                <p>Hello! Kenalin aku Juneta, mahasiswi yang memiliki kesempatan untuk internship di Alterra sebagai Culture & Engagement Intern atau biasa disebut Culment. Nah kali ini, aku mau sharing </p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
-            </Card>
-          </Col>
-          
-
-          {/* CARD-5 */}
-          <Col span={12}>
-            <Card className="card5">
-
-              {/* ASET */}
-              <Row>
-                <Col span={24} >
-                  <img src={reading} alt="" className="report" />
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Ragil Mega Ananda</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>3 Rekomendasi Grammar Checker</h4>
-                <p>Terkadang menulis email atau laporan dalam bahasa Inggris mempunyai tantangan tersendiri. Sebagian dari kita belum tentu menguasai bahasa Inggris tingkat tinggi, dan mengandalkan</p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
-            </Card>
-          </Col>
-
-
-          {/* CARD-6 */}
-          <Col span={12}>
-            <Card className="card6">
-
-              {/* ASET */}
-              <Row>
-                <Col span={24} >
-                  <img src={startup} alt="" className="startup" />
-                </Col>
-              </Row>
-            
-              <div className="penulis2">
-              <b>Ragil Mega Ananda</b> 
-              </div>
-              <br/>
-              <hr className="garis2" color="#F6F1F1" />
-
-              <div className="konten-judul">
-                <h4>3 Rekomendasi Grammar Checker</h4>
-                <p>Terkadang menulis email atau laporan dalam bahasa Inggris mempunyai tantangan tersendiri. Sebagian dari kita belum tentu menguasai bahasa Inggris tingkat tinggi, dan mengandalkan</p>
-              {<a href="https://alterrabills.id/" className="arrow" target="_blank"><b>Read More</b><ArrowRightOutlined /></a>}
-              </div>
-            </Card>
-          </Col>
-
-
-
-
-        </Row>
-
-      </div>
+            </Row>
+      ))}
     </>
   );
 };

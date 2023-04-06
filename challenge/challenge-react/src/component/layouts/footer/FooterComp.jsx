@@ -58,5 +58,3 @@ const FooterComp = () => {
 }
 
 export default FooterComp;
-
-<CopyrightOutlined />
