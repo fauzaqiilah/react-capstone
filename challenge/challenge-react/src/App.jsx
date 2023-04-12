@@ -3,10 +3,11 @@ import './App.css'
 import LayoutComponent from './component/layouts/LayoutComponent'
 import QuotesComponent from './component/layouts/quotes/QuotesComponent'
 import Kamis from './pages/kamis/Kamis'
+import './pages/kamis/kamis.css'
 import Route from './router/Router'
-import './component/layouts/global.css'
 import Home from './pages/home/home'
 import Feature from './pages/feature/reactCaptone'
+import './pages/feature/reactCaptone.css'
 
 
 function App() {

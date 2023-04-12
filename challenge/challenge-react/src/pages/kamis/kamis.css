@@ -63,7 +63,7 @@
 
 .card{
     width: 65vh;
-    height: 60vh;
+    height: 63vh;
     border-color:darkgrey;
     text-align: left;
 }
@@ -87,6 +87,11 @@
 
 .read-more{
     padding-right: 43vh;
+}
+
+.jarak{
+    height:67vh;
+    width: 69vh;
 }
 
 /* FOOTER */

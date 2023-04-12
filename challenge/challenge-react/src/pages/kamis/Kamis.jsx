@@ -3,6 +3,7 @@ import { Image, Col, Row, Card } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { ARTIKEL_DATA } from "./constant";
 import Gap from "../../component/gap/Gap";
+import '../kamis/kamis.css'
 
 const QuotesComponent = () => {
   return (
@@ -19,7 +20,7 @@ const QuotesComponent = () => {
               width={400}
               height={500}
               justify-content="center"
-              src="https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"
+              src="https://www.alterra.id/wp-content/uploads/2019/10/tumbnail_Alterramenulis-400x480.png"
               onClick={() => setVisible(true)}
             />
             <div
@@ -61,9 +62,17 @@ const QuotesComponent = () => {
         </p>
       </div>
 
+      
+      <Row className="row">
+        <Gap height={20}/>
       {ARTIKEL_DATA.map((artikel) => (
-          <Row key={artikel.id} className="row">
-            <Card className="card">
+        <div className="jarak">
+            <Card key={artikel.id} className="card"
+            hoverable
+            style={{
+              color: "#19345E"
+            }}
+            >
               <Col>
               <img src={artikel.image} alt="" id="img" />
               <Gap height={10}/>
@@ -82,33 +91,13 @@ const QuotesComponent = () => {
                     <b>Read More</b>
                     <ArrowRightOutlined />
                   </a>
-                
             </Col>
             </Card>
-            <Gap width={30}/>
-            <Card className="card">
-              <Col>
-              <img src={artikel.image} alt="" id="img" />
-              <Gap height={10}/>
-              <div className="penulis2">{artikel.name}</div>
-              <hr className="batas"/>
-              <Gap height={10}/>
-              <div className="judul">{artikel.hobby}</div>
-              <Gap height={10}/>
-              <div className="berita">{artikel.age}</div>
-              <Gap height={10}/>
-              <a
-                    href="https://alterrabills.id/"
-                    className="read-more"
-                    target="_blank"
-                  >
-                    <b>Read More</b>
-                    <ArrowRightOutlined />
-                  </a>
-            </Col>
-            </Card>
-            </Row>
+            
+          </div>
       ))}
+      </Row> 
+  
     </>
   );
 };
