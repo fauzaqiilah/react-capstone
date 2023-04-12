@@ -76,12 +76,12 @@ const QuotesComponent = () => {
               <Col>
               <img src={artikel.image} alt="" id="img" />
               <Gap height={10}/>
-              <div className="penulis2">{artikel.name}</div>
+              <div className="penulis2">{artikel.writer}</div>
               <hr className="batas"/>
               <Gap height={10}/>
-              <div className="judul">{artikel.hobby}</div>
+              <div className="judul">{artikel.judul}</div>
               <Gap height={10}/>
-              <div className="berita">{artikel.age}</div>
+              <div className="berita">{artikel.berita}</div>
               <Gap height={10}/>
                   <a
                     href="https://alterrabills.id/"
