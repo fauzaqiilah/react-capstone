@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script&family=Lilita+One&family=Varela+Round&display=swap");
+
+/* WELCOMING QUOTES */
+.container {
+  margin: 50px;
+  text-align: center;
+}
+
+.tulisan {
+  margin: 90px;
+  text-align: left;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #002b5b;
+  line-height: 43px;
+}
+
+.penulis {
+  font-size: small;
+}
+
+.garis {
+  width: 120vh;
+}
+
+/* ARTIKEL TITLE */
+
+.artikel p {
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #002b5b;
+  line-height: 30px;
+}
+
+.subtulisan {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  color: gray;
+}
+
+/* KONSTAN */
+
+#img {
+  width: 50vh;
+  height: 30vh;
+}
+
+.batas {
+  width: 50vh;
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+}
+
+.card {
+  width: 65vh;
+  height: 63vh;
+  border-color: darkgrey;
+  text-align: left;
+}
+
+.penulis2 {
+  text-align: left;
+  color: coral;
+  font-size: 16px;
+}
+
+.judul {
+  text-align: left;
+  color: #002b5b;
+  font-size: medium;
+}
+
+.berita {
+  text-align: left;
+  color: black;
+}
+
+.read-more {
+  padding-right: 43vh;
+}
+
+.jarak {
+  height: 67vh;
+  width: 69vh;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: #002b5b;
+}
+
+.copyright {
+  margin: 15px 0px 20px 20px;
+}
+
+.cr {
+  color: white;
+  font-size: 10px;
+}
+
+#kebijakan {
+  text-align: left;
+  margin-left: 215px;
+  color: white;
+}
+
+.kebpriv {
+  margin-right: 20px;
+}
+
+.homealter {
+  color: white;
+  font-size: 20px;
+  margin: 18px 0px 15px;
+}
+
+#karfaq {
+  text-align: left;
+  margin-left: 27vh;
+  margin-top: 10px;
+  line-height: 40px;
+}
+
+.career {
+  font-size: 15px;
+}
+
+.faq {
+  font-size: 15px;
+}
+
+.kontak {
+  color: white;
+  font-size: 20px;
+  margin: 18px 0px 15px;
+}
+
+#sosmed {
+  text-align: left;
+  margin-left: 24vh;
+  margin-top: 10px;
+  line-height: 40px;
+}
+
+.fb {
+  color: white;
+  font-size: 15px;
+}
+
+.twt {
+  color: white;
+  font-size: 15px;
+}
+
+.ig {
+  color: white;
+  font-size: 15px;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+}
