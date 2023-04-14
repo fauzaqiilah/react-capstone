@@ -3,6 +3,7 @@ import { Button, Card, Carousel, Col, Row } from 'antd';
 import { Space, Swiper } from 'antd-mobile';
 import { Swiper_Data } from './constanst';
 import "./styles.css"
+import { LeftSquareTwoTone, RightSquareTwoTone } from '@ant-design/icons';
 
 
 const SwiperName = (props) => {
@@ -62,13 +63,12 @@ const SwiperName = (props) => {
                     >
                         {items}
                     </Swiper>
+                    <Space className='icon-size'>  <LeftSquareTwoTone />
+                    <RightSquareTwoTone /></Space>
+                  
                 </Col>
             </Row>
-            <Row>
-                <Carousel>
-                    {item2}
-                </Carousel>
-            </Row>
+            
             
                        
         </div>
