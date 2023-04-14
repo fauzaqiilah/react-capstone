@@ -5,6 +5,7 @@ import LayoutComponent from "../components/layouts/LayoutComponent";
 import HomePage from "../pages/homePage/HomePage";
 import WhyUs from "../pages/whyUs/WhyUs";
 import Kamis from "../pages/Kamis/Kamis";
+import SwiperName from '../pages/swiper/swiper';
 
 const RouteManagement = () => {
   return (
@@ -14,6 +15,7 @@ const RouteManagement = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/whyus" element={<WhyUs />} />
           <Route path="/kamis" element={<Kamis />} />
+          <Route path='/swiper' element={<SwiperName/>}/>
         </Routes>
       </LayoutComponent>
     </Suspense>
